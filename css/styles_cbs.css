@@ -204,3 +204,58 @@ body{
     height: 300px;
   
   }
+
+  /*¿Quiénes Somos?*/
+
+  #QuienesSomos{
+    align-items: center;
+    margin-top: 50;
+  }
+
+  #Contintro{
+    background-color: #1b1b1b;
+    height: 1000px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  #cajaimg1{
+    background-image: url(../img/QUIENES_SOMOS/im\ intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 12em 0;
+  }
+  #cajaimg1 h1{
+  color: aliceblue;
+  font-size: 60px;
+  font-family: fantasy;
+  text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
+  }
+
+  #cajap1{
+    background-color: rgb(10, 119, 19);
+    height: 500px;
+    text-align: justify;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #cajap1 p{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: fantasy;
+    margin: auto;
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                 0px -2px 0px black;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
