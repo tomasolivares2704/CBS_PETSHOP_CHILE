@@ -5,14 +5,19 @@ body{
 }
 /* Estos son los estilos de la barra de navegación */
 .navbar{
-  background-color: #1b1b1b;
   border-bottom: 5px;
   border-radius: 20;
   margin: 0%;
+  color: aliceblue;
 } 
 
-#fondoNavbar{
+.nav-link{
+  color: aliceblue;
+}
+
+#fondobrnav{
   background-color: #1b1b1b;
+  color: aliceblue;
 }
 
 #navbarNavDropdown{
@@ -22,14 +27,10 @@ body{
   justify-content: space-evenly;
 }
 
-.btn-outline-success{
-  color: #ffffe5;
-  border-color: #ffffe5;
-}
-
-.container-fluid{
+#bordebrnv{
   height: 100%;
-  background-color: #ffffe5;
+  background-color: #1b1b1b;
+  color: aliceblue;
   padding: 0%;
 }
 
