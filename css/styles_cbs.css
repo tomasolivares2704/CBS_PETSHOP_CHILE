@@ -50,6 +50,7 @@ body{
 }
 
 
+/* SLIDER NUMERO 1*/
 .slider{
     width: 75vw;
     height: auto;
@@ -257,5 +258,21 @@ body{
                  0px -2px 0px black;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+
+  .imgproductosindex{
+    width: 200px;
+    height: auto;
+    padding: 1cm;
+    
+    
+
+  }
+
+  .textproductosindex{
+    text-align: justify;
+    color: #1b1b1b;
+
   }
   
