@@ -210,12 +210,12 @@ body{
 
   #QuienesSomos{
     align-items: center;
-    margin-top: 50;
+    background-color: #1b1b1b;
   }
 
   #Contintro{
     background-color: #1b1b1b;
-    height: 1000px;
+    height: 500px;
     margin: auto;
     margin-top: 50px;
   }
@@ -225,9 +225,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    margin-bottom: 50px;
     text-align: center;
     padding: 12em 0;
+    margin-top: 50px;
   }
   #cajaimg1 h1{
   color: aliceblue;
@@ -245,6 +245,8 @@ body{
     text-align: justify;
     align-items: center;
     justify-items: center;
+    margin-top: 50px;
+    word-break: keep-all;
   }
 
   #cajap1 p{
@@ -258,6 +260,48 @@ body{
                  0px -2px 0px black;
     padding-left: 30px;
     padding-right: 30px;
+    word-wrap: break-word;
+  }
+
+  #Contorigen{
+    background-color: #1b1b1b;
+    height: 1000px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  #Cajaimg2{
+    background-image: url(../img/QUIENES_SOMOS/im\ origen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    padding: 12em 0;
+    margin-top: 50px;
+  }
+
+  #Cajap2{
+    background-color: #1b1b1b;
+    height: 800px;
+    text-align: justify;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    word-break: keep-all;
+  }
+
+  #Cajap2 p{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: fantasy;
+    margin: auto;
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                 0px -2px 0px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    word-wrap: break-word;
   }
 
 
