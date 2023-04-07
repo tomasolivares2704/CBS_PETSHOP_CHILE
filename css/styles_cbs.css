@@ -261,6 +261,7 @@ body{
   }
 
 
+/* PRODUCTOS ANIMALES EN EL INDEX*/
   .imgproductosindex{
     width: 200px;
     height: auto;
@@ -275,4 +276,42 @@ body{
     color: #1b1b1b;
 
   }
+
+  /* UBICACION INDEX*/
+
+  .divubicacion{
+    background-color: #1b1b1b;
+    padding: 1cm;
+  }
+
+  .imagendiv{
+    max-width: 600px;
+    min-height: auto;
+  }
+
+  .divinterno{
+    background-color:rgb(168, 21, 21) ;
+  }
+
+  .textdivubicacion{
+    padding: 1cm;
+    color: whitesmoke;
+    text-align:center;
+
+  
+
+  }
+
+
+  /* PRODUCTO MAS VENDIDO*/
+
+.divfondo1{
+  background-color: #1b1b1b;
+}
+
+.divfondo2{
+  background-color: green;
+  padding: 0.5cm;
+}
+
   
