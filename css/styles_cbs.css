@@ -661,14 +661,13 @@ body{
     padding-top: 10px;
   }
 
-#Enviar p{
+  #Enviar p{
     justify-content: center;
     align-items: center;
     margin: auto;
-
-}
+  }
   
-  button{
+  #btn_enviar{
     height: 45px; 
     padding-left: 5px;
     padding-right: 5px;   
@@ -685,7 +684,7 @@ body{
     align-items: center;
   }
   
-  button p{
+  #btn_enviar p{
     color: black; 
     
   }
