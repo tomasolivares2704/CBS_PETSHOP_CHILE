@@ -140,9 +140,15 @@ body{
   }
   
   .logo1{
-    width: 200px;
+    max-width: 200PX;
     background-position: center;
   }
+
+  .logo99{
+    max-width: 300PX;
+    background-position: center;
+  }
+  
   
   
   .divflex2{
@@ -743,5 +749,15 @@ body{
     align-items: center;
     color: #141619;
     }
+
+
+    /* PAGINA FITFORMULA ADULTO*/
+
+    .imgmenu1{
+     max-height: 200px;
+     max-width: 150px;
+
+  }
+    
 
   
