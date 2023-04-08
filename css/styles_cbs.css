@@ -432,4 +432,321 @@ body{
   margin-top: 50px;
   font-size: 20px;
   background-color: #1b1b1b;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+
+/*--------------------------------------------------------------------¿Quiénes Somos?--------------------------------------------------------------------*/
+
+  #QuienesSomos{
+    align-items: center;
+    background-color: #1b1b1b;
+    height: 100%;
+  }
+
+  #contener{
+    margin: auto;
+    margin-top: 50px;
+    height: 100%;
+  }
+
+  #Contintro{
+    background-color: #1b1b1b;
+    margin: auto;
+    margin-top: 50px;
+    height: 100%;
+  }
+
+  #cajaimg1{
+    background-image: url(../img/QUIENES_SOMOS/im\ intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    padding: 12em 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #cajaimg1 h1{
+  color: aliceblue;
+  font-size: 60px;
+  font-family: fantasy;
+  text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
+  }
+
+  #cajap1{
+    background-color: rgb(10, 119, 19);
+    height: 500px;
+    text-align: justify;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    word-break: keep-all;
+    margin-bottom: 50px;
+  }
+
+  #cajap1 p{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: fantasy;
+    margin: auto;
+    margin-top: 80px;
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                 0px -2px 0px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+  }
+
+  #Contorigen{
+    background-color: #1b1b1b;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  #Cajaimg2{
+    background-image: url(../img/QUIENES_SOMOS/im\ origen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    text-align: center;
+    padding: 12em 0;
+    margin-top: 50px;
+  }
+
+  #Cajap2{
+    background-color: #1b1b1b;
+    height: 800px;
+    text-align: justify;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    word-break: keep-all;
+  }
+
+  #Cajap2 p{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: fantasy;
+    margin: auto;
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                 0px -2px 0px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    word-wrap: break-word;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+
+/*-------------------------------------------------------------------------Contacto----------------------------------------------------------------------*/
+
+  #CuerpFrom{
+    height: 100%;
+    background-color: #1b1b1b;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #cajap3{
+    background-image: url(../img/CONTACTANOS/Perro\ mensajero.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: aliceblue;
+    height: 900px;
+    text-align: justify;
+    margin-top: 50px;
+    word-break: keep-all;
+    margin-bottom: 50px;
+  }
+
+  #cajap3 p{
+    margin-right: 30px;
+    font-size: 27px;
+  }
+
+  #contform{
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  #formulario{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 20px;
+  }
+
+
+  #contenedorformulario{
+    width: 90%;
+    height: 90%;
+   } 
+
+  .contact_form{  
+    width: 80%; 
+    height: auto;
+    margin: 80px auto; 
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #1b1b1b; 
+    padding-left: 30px; 
+    display: flex;
+  }
+  
+  
+  input{
+    background-color: #1b1b1b; 
+    color: #ffffe5;
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ffffe5; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #1b1b1b; 
+    color: #ffffe5;
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ffffe5; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  #Enviar{
+    height: 50px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 30px;   
+    text-transform: uppercase;
+    background-color: #007928; 
+    border-color: #007928; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+
+  #enviar{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+#Enviar p{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ffffe5; 
+    border-color: #007928; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button p{
+    color: black; 
+    
+  }
+  
+  
+  span{
+    color: #007928; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #ffffe5;  
+  }
+  
+  
+  h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #ffffe5;
+  }
+  
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #ffffe5;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: #ffffe5; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #ffffe5;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+>>>>>>> Stashed changes
