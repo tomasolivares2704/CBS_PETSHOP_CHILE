@@ -381,6 +381,7 @@ body{
     font-size: 25px;
     font-family: fantasy;
     margin: auto;
+    margin-top: 80px;
     text-shadow: 2px  0px 0px black,
                  0px  2px 0px black,
                 -2px  0px 0px black,
