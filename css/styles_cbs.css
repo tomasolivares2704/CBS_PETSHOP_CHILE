@@ -72,7 +72,7 @@ body{
   
   .slider .slide img{
     width: 100%;
-  
+    
   }
   
   @keyframes scroll {
@@ -620,14 +620,6 @@ body{
     border: 1px solid #97d848;
   }
 
-
-
-
-
-
-
-
-
   /* TIENDA GENERAL */
 
 .divtiendavertical{
@@ -736,7 +728,6 @@ body{
     #imgmenu1{
      max-height: 200px;
      max-width: 150px;
-
   }
     
 
