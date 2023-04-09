@@ -724,49 +724,14 @@ body{
 
 /*-----------------------------------------------------------------------Carrito-------------------------------------------------------------------------*/
 
-  #Carrito{
-    height: 100%;
+  #MenuTienda{
+    color: #1b1b1b;
   }
 
-  #BarraTienda{
-    height: 1200px;
-    background-color: #1b1b1b;
-  }
-
-  #btn_dd{
+  #HeaderMenu h5{
     color: aliceblue;
-    height: 60px;
-    width: 100px;
-    text-align: initial;
   }
 
-  #MiCarrito{
-    padding: 30px 50px;
-  }
-
-  #MiCarrito h1{
-    font-size: 60px;
-  }
-
-  #ContCarrito{
-    height: 1100px;
-    background-color: #1b1b1b;
-  }
-
-  #Contenido h1{
-    font-size: 30px;
-    color: aliceblue;
-    padding: 30px 30px;
-  }
-
-  #ResumenCompra{
-    height: 1100px;
-    background-color: #1b1b1b;
-    border-left: aliceblue solid;
-  }
-
-  #ResumenCompra h1{
-    font-size: 30px;
-    color: aliceblue;
-    padding: 30px 30px;
+  .offcanvas{
+    background: #1b1b1b;
   }
