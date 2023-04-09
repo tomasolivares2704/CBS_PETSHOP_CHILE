@@ -42,10 +42,10 @@
     <nav class="navbar navbar-light">
         <div class="container-fluid" style="justify-content: end;">
             <!-- Botón Navbar -->
-            <button class="navbar-toggler" type="button"
+            <button id="tgml" class="navbar-toggler" type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#MenuLateral"> <!-- Toggle: hace que el menú se abra de forma lateral. Target: Enlaza el menú con los enlaces que se van a abrir -->
-            <span id="MenuTienda" class="button">MenuTienda</span>
+            <span id="MenuTienda" class="button">Menu Tienda</span>
             </button>
             <!-- Contenedor del offcanvas-->
             <section class="offcanvas offcanvas-start" id="MenuLateral">
@@ -93,11 +93,31 @@
     </nav>
     <!-- Productos del Carrito -->
     <div id="MiCarrito" class="container-fluid col-lg-11">
-        <h1>Mi Carrito</h1>
+        <h1><strong>Mi Carrito</strong></h1>
         <div class="row">
-            <div id="Productos" class="container-fluid col-lg-10"></div>
-            <div id="Resumen" class="container-fluid col-lg-2"></div>
+            <div id="Productos" class="container-fluid col-lg-9">
+                <h1><strong>Productos</strong></h1>
+            </div>
+            <div id="Resumen" class="container-fluid col-lg-3">
+                <h1><strong>Resumen de Compra</strong></h1>
+                <div style="margin-top: 30px; margin-left: 20px; color: aliceblue;">
+                    <h5>Sub Total--------------------$0</h5>
+                </div>
+                <div style="margin-top: 30px; margin-left: 20px; color: aliceblue; border-bottom: aliceblue solid;">
+                    <h5>Envío------------------------$0</h3>
+                </div>
+                <div style="margin-top: 30px; margin-left: 20px; margin-bottom: 50px; color: aliceblue;">
+                    <h3><strong>Compra---------------$0</strong></h4>
+                </div>
+                <div class="container-fluid col-lg-12" style="align-items: center; justify-content: center; text-align: center;">
+                    <a  href="" class="button" style="color: aliceblue; text-decoration: none;"><img src="../img/LOGOS/Logo_wp.png" alt="Modo Pago Online WP" 
+                        Style="height: 150px; width: 320px; border-radius: 5%;">WebPay</a>
+                    <a  href="" class="button" style="color: aliceblue; text-decoration: none;"><img src="../img/LOGOS/LOGO-TRANSPARENTE.png" alt="Modo Pago Online WP" 
+                        Style="height: 150px; width: 320px; border-radius: 5%; background-color: aliceblue; margin-top: 30px;"> Transferencia </a>
+                </div>
+            </div>
         </div>
+
     </div>
       <!-- Footer -->
     <div id="footer" class="container-fluid">

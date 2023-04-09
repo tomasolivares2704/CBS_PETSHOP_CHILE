@@ -581,7 +581,7 @@ body{
   
   
   span{
-    color: #007928; 
+    color: aliceblue; 
   }
   
   
@@ -723,8 +723,22 @@ body{
     
 
 /*-----------------------------------------------------------------------Carrito-------------------------------------------------------------------------*/
-
+/* Barra Lateral*/
   #MenuTienda{
+    height: 45px;  
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #1b1b1b; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tgml{
+    background-color: #1b1b1b;
     color: #1b1b1b;
   }
 
@@ -734,4 +748,34 @@ body{
 
   .offcanvas{
     background: #1b1b1b;
+  }
+
+  /*Contenido del carrito*/
+
+  #Productos{
+    height: 1200px;
+    background-color: #1b1b1b;
+    margin-bottom: 50px;
+  }
+
+  #Productos h1{
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  #Resumen{
+    height: 1200px;
+    background-color: #1b1b1b;
+    border-left: aliceblue;
+    border-style: solid;
+    margin-bottom: 50px;
+  }
+
+  #Resumen h1{
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
