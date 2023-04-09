@@ -9,6 +9,7 @@ body{
   border-radius: 20;
   margin: 0%;
   color: aliceblue;
+  align-items: end;
 } 
 
 .nav-link{
@@ -49,6 +50,11 @@ body{
   align-items: first baseline;
 }
 
+#carrito{
+  background-color: #1b1b1b;
+  height: 40px;
+  width: 40px;
+}
 
 /* SLIDER NUMERO 1*/
 .slider{
@@ -552,24 +558,9 @@ body{
     width: 420px;   
     cursor: pointer;
   }
-
-  #enviar{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  #Enviar p{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
-}
   
   #btn_enviar{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
+    height: 45px;  
     margin-bottom: 20px; 
     margin-top: 10px;   
     text-transform: uppercase;
@@ -585,7 +576,7 @@ body{
   
   #btn_enviar p{
     color: black; 
-    
+    margin-top: 10px;
   }
   
   

@@ -10,12 +10,12 @@
   <body>
     <!-- Esto es una barra de navegación -->
     <div id="bordebrnv"class="container-fluid">
-      <nav class="navbar navbar-expand-sm  border-3">
+      <nav class="navbar navbar-expand-sm navbar-dark border-3">
         <div id="fondobrnav" class="container-fluid">
           <a href="Index.html" class="navbar-brand"> <img src="../img/LOGOS/LOGO-TRANSPARENTE.png" height="50px" width="100" alt="logo"></a>
-          <button               type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
               <span class="navbar-toggler-icon"></span>
-           </button>
+          </button>
           <div id="MenuNavegacion" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-3">
               <li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li>
@@ -29,12 +29,14 @@
                   <li><a class="dropdown-item" href="#">Farmacia</a></li>
                 </ul>
               </li>
-                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
-             </ul>
+              <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+            </ul>
           </div>
+          <a href="carrito.php" class="btn"><img src="../img/ICONOS/icon_market_car-1.png" alt="carrito" id="carrito"></a>
         </div>
       </nav>
     </div> 
+    <!-- Aquí comienza el formulario -->
     <div id="CuerpFrom" class="container-fluid col-lg-11">
         <div class="row">
             <div id="contform" class="container-fluid col-xs-12 col-md-6 col-lg-6">
@@ -70,7 +72,7 @@
                       </label>                     
                       <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                     </p>                    
-                    <button id="btn_enviar" type="submit" name="enviar_formulario" id="enviar"><p><strong>Enviar</strong></p></button>
+                    <button id="btn_enviar" type="submit" name="enviar_formulario"><p><strong>Enviar</strong></p></button>
                     <p class="aviso">
                       <span class="obligatorio"> * </span>los campos son obligatorios.
                     </p>          

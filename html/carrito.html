@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles_cbs.css">
+    <title>MASCOTAS CBS</title>
+  </head>
+  <body>
+    <!-- Esto es una barra de navegación -->
+    <div id="bordebrnv"class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark border-3">
+        <div id="fondobrnav" class="container-fluid">
+          <a href="Index.html" class="navbar-brand"> <img src="../img/LOGOS/LOGO-TRANSPARENTE.png" height="50px" width="100" alt="logo"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="MenuNavegacion" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="Quiénes Somos.html">¿Qui&eacute;nes Somos?</a></li>
+              <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="buttom" data-bs-toggle="dropdown">Productos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../html/tienda.html">Todos</a></li>
+                  <li><a class="dropdown-item" href="#">Gatos</a></li>
+                  <li><a class="dropdown-item" href="../html/tienda.html">Perros</a></li>
+                  <li><a class="dropdown-item" href="#">Farmacia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <a href="carrito.php" class="btn"><img src="../img/ICONOS/icon_market_car-1.png" alt="carrito" id="carrito"></a>
+        </div>
+      </nav>
+    </div> 
+    <!-- Aquí comienza el carrito -->
+    <div class="container-fluid col-lg-12">
+        <div class="row">
+            <div id="Barratienda" class="container-fluid col-lg-4">
+
+            </div>
+            <div id="MiCarrito" class="container-fluid col-lg-8">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body> 
+</html>
