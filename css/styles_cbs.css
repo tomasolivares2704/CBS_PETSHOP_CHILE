@@ -612,6 +612,13 @@ body{
   }
 
   /* TIENDA GENERAL */
+  #Tienda{
+    background-color: #1b1b1b;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
 .divtiendavertical{
   background-color: #1b1b1b;
@@ -634,6 +641,7 @@ body{
   width: 200px;
   background-color: rgba(0, 0, 0, 0.637);
   padding: 0.1cm;
+  margin: 10px 10px 10px 10px;
 }
 
 
@@ -674,7 +682,8 @@ body{
   
 
 #h1tomas{
-  color: #141619;
+  color: aliceblue;
+  padding: 30px 30px;
 }
 
 #buttonTOMAS1{
