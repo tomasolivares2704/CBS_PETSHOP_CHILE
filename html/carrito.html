@@ -32,18 +32,108 @@
               <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
             </ul>
           </div>
-          <a href="carrito.php" class="btn"><img src="../img/ICONOS/icon_market_car-1.png" alt="carrito" id="carrito"></a>
+          <a href="carrito.html" class="btn"><img src="../img/ICONOS/icon_market_car-1.png" alt="carrito" id="carrito"></a>
         </div>
       </nav>
     </div> 
     <!-- Aquí comienza el carrito -->
-    <div class="container-fluid col-lg-12">
+    <div id="Carrito" class="container-fluid col-lg-12">
         <div class="row">
-            <div id="Barratienda" class="container-fluid col-lg-4">
-
+            <div id="BarraTienda" class="container-fluid col-lg-2">
+                <div class="dropdown">
+                    <button id="btn_dd" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      General
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <a id="btn_dd" href="#" class="btn">Farmacia</a>
+                  <div class="dropdown">
+                    <button id="btn_dd" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gatos
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button id="btn_dd" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Perros
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
             </div>
-            <div id="MiCarrito" class="container-fluid col-lg-8">
-
+            <div id="MiCarrito" class="container-fluid col-lg-10">
+                <h1><strong>Mi Carrito</strong></h1>
+                <div id="ContCarrito" class="container-fluid col-lg-12">
+                    <div class="row">
+                        <div id= "Contenido" class="container-fluid col-lg-8">
+                            <h1>Productos                                    Cantidad</h1>
+                        </div>
+                        <div id="ResumenCompra" class="container-fluid col-lg-4">
+                            <h1>Resumen del Pedido</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Footer -->
+    <div id="footer" class="container-fluid">
+        <div class="row">
+            <div id="logoenftr" class="container-fluid col-xs-12 col-md-6 col-lg-3">
+                <p>columna</p>
+            </div>
+            <div id="linksftr" class="container-fluid col-xs-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Ayuda</a>
+                </div>
+                <div class="mb-2">
+                <a class="text-white text-decoration-none" href="">Términos y Condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Políticas de Privacidad</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Políticas de Empresa</a>
+                </div>
+            </div>
+            <div id="RRSSftr" class="container-fluid col-xs-12 col-md-6 col-lg-3">
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="https://www.instagram.com/cbsmascotas/"><img src="../img/LOGOS/Logo_ig.png" alt="Instagram" style="height: 45px; width: 45px;">@cbsmascotas</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="https://www.facebook.com/profile.php?id=100090160240180"><img src="../img/LOGOS/Logo_fb.png" alt="Facebook" style="height: 45px; width: 45px;"> CBS Mascotas</a>
+                </div>
+            </div>
+            <div id="contactanos" class="container-fluid col-xs-12 col-md-6 col-lg-3">
+                <h1> <strong>Contáctanos</strong></h1>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" 
+                    href="https://wa.me/56981828309?text=Muy%20buenas%20estimado%20cliente,%20espero%20se%20encuentre%20bien.%20Nos%20contactaremos%20con%20usted%20en%20la%20brevedad%20posible.">
+                    <img src="../img/LOGOS/Logo_wsp.png" alt="Whatsapp" style="height: 45px; width: 45px;">+56 9 8182 8309</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href=""> <img src="../img/LOGOS/Logo_gm.png" alt="correo" style="height: 45px; width: 45px;"> cbsmascoteria@gmail.com</a>
+                </div>
+                <div class="container-fluid">
+                    <img src="../img/LOGOS/Logo_wp.png" alt="webpay" style="margin-left: 20px; margin-top: 10px;">
+                </div>
+            </div>
+            <div id="brderechos" class="container-fluid col-xs-12 col-md-12 col-lg-12">
+                <p>Copyright ©CBSMascotas. Todos los derechos reservados</p>
             </div>
         </div>
     </div>
