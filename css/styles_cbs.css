@@ -237,34 +237,50 @@ body{
 
   /* UBICACION INDEX*/
 
-  .divubicacion{
+  #divubicacion{
     background-color: #1b1b1b;
-    padding: 1cm;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-  .imagendiv{
-    max-width: 600px;
-    min-height: auto;
+  #imagendiv{
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
   }
 
-  .divinterno{
-    background-color:rgb(168, 21, 21) ;
+  #divinterno{
+    background-color: red;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-  .textdivubicacion{
-    padding: 1cm;
-    color: whitesmoke;
-    text-align:center;
-
-  
-
+  #divinterno h1{
+    color: aliceblue;
+    font-size: 70px;
+    margin: auto;
+    margin-top: 25%;
+    word-wrap: break-word;
+    margin-bottom: 50px;
   }
-
 
   /* PRODUCTO MAS VENDIDO*/
 
 .divfondo1{
   background-color: #1b1b1b;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .divfondo2{
