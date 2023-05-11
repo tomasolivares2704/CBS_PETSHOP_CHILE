@@ -42,7 +42,7 @@
             <div id="contform" class="container-fluid col-xs-12 col-md-6 col-lg-6">
                 <h1>Formulario de contacto</h1>
                 <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-                <form action="submeter-formulario.php" method="post">       
+                <form id="Formulario" action="submeter-formulario.php" method="post">       
                     <p>
                       <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
@@ -58,7 +58,7 @@
                     <p>
                       <label for="telefone" class="colocar_telefono">Teléfono
                       </label>
-                      <input type="tel" name="introducir_telefono" id="numero" placeholder="+56 9 9999 9999" onchange="return validarNumero()">
+                      <input type="text" name="introducir_telefono" id="numero" placeholder="+56 9 9999 9999">
                     </p>     
                     <p>
                       <label for="asunto" class="colocar_asunto">Asunto
@@ -72,7 +72,7 @@
                       </label>                     
                       <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                     </p>                    
-                    <button id="btn_enviar" type="button" name="enviar_formulario" onclick="return validarFormulario()"><p><strong>Enviar</strong></p></button>
+                    <button id="btn_enviar" type="submit" name="enviar_formulario" onclick=""><p><strong>Enviar</strong></p></button>
                     <p class="aviso">
                       <span class="obligatorio"> * </span>los campos son obligatorios.
                     </p>          
