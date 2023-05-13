@@ -42,22 +42,34 @@
             <div id="contform" class="container-fluid col-xs-12 col-md-6 col-lg-6">
                 <h1>Formulario de contacto</h1>
                 <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                <!-- POPUP -->
+                  <div id="popup">
+                    <div class="content-pop">
+                      <div>El formulario ha sido enviado correctamente</div>
+                      <button id="cerrar" type="button" aria-label="Close"> Cerrar </button>
+                  </div>
+                </div>
+
+
                 <form id="Formulario" action="submeter-formulario.php" method="post">       
                     <p>
                       <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
                       </label>
+                      <div id="alertaErrName" style="display: none; color: red;">El nombre ingresado no es válido, ingrese nuevamente</div>
                       <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
                     </p>              
                     <p>
                       <label for="email" class="colocar_email">Email
                         <span class="obligatorio">*</span>
                       </label>
+                      <div id="alertaErrMail" style="display: none; color: red;">El correo ingresado no es válido, ingrese nuevamente</div>                      
                       <input type="text" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
                     </p>
                     <p>
                       <label for="telefone" class="colocar_telefono">Teléfono
                       </label>
+                      <div id="alertaErrNum" style="display: none; color: red;">El número ingresado no es válido, ingrese nuevamente</div>
                       <input type="text" name="introducir_telefono" id="numero" placeholder="+56 9 9999 9999">
                     </p>     
                     <p>

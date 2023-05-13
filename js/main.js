@@ -6,11 +6,11 @@ $(document).ready(function() {
 
 	  //VARIABLES CORRESPONDIENTES A INPUTS
 
-	  var nombre = $('#nombre').val();
-	  var email = $('#email').val();
-	  var numero = $('#numero').val();
-	  var asunto = $('#asunto').val();
-	  var mensaje = $('#mensaje').val();
+	  let nombre = $('#nombre').val();
+	  let email = $('#email').val();
+	  let numero = $('#numero').val();
+	  let asunto = $('#asunto').val();
+	  let mensaje = $('#mensaje').val();
 
 	  //VALIDACIONES CAMPOS OBLIGATORIOS
 
@@ -40,26 +40,27 @@ $(document).ready(function() {
 
 	//LLAMADO DE FUNCIONES DE VALIDACIÓN
 	if(!validarNombre(nombre)){
-
-		alert('El nombre ingresado no es válido, ingrese nuevamente');
+		
+		$('#alertaErrName').show().delay(2500).fadeOut("slow");
 		return false;
 	}
 
 	if(!validarEmail(email)){
 
-		alert('El correo ingresado no es válido, ingrese nuevamente');
+		$('#alertaErrMail').show().delay(2500).fadeOut("slow");
 		return false;
 	}
 
-	if(!validarNumero(numero)){
+	if(!validarNumero(numero) || numero.length === 0){
 
-		alert('El número ingresado no es válido, ingrese nuevamente');
+		$('#alertaErrNum').show().delay(2500).fadeOut("slow");
 		return false;
 	}
 
-	 //MENSAJE CONFIRMACIÓN DE ENVÍO DE FORMULARIO
-	alert('El formulario se ha enviado correctamente');
-    return true;
+	$("#Formulario").submit(function(){
+		$("#popup").fadeIn("slow");
+	});
+	return true;
 
 	});
 
@@ -68,19 +69,25 @@ $(document).ready(function() {
 	//NOMBRE
 	function validarNombre(nombre){
 
-		var exprValidName = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+		let exprValidName = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
 		return exprValidName.test(nombre)
 	}
 
 	function validarEmail(email){
 
-		var exprValidEmail = /[a-zA-Z0-9]+@[a-zA-Z0-9]+\.(com|net)/;
+		let exprValidEmail = /[a-zA-Z0-9]+@[a-zA-Z0-9]+\.(com|net)/;
 		return exprValidEmail.test(email)
 	}
 
 	function validarNumero(numero){
 
-		var exprValidNumber = /^(\+?\d{1,3}[\s-]?)?\d{9}$/;
+		let exprValidNumber = /^(|\+56 )(\(?\d{2}\)?[- ]?)?\d{7}$/;
 		return exprValidNumber.test(numero)
 	}
+
+	//FUNCIÓN QUE PERMITE CERRAR EL POP UP
+	$("#cerrar").on("click", function(){
+		$("#popup").fadeOut();("slow");
+	});
+
 });
