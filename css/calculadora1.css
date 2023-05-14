@@ -1,0 +1,22 @@
+#formCalculadora1{
+    background-color: cadetblue;
+    color:whitesmoke;
+    width: 600px;
+    height: auto;
+    padding: 15px;
+}
+
+#h5calculadora{
+    background-color: gray;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+#tablaMeses:hover {
+    transform: scale(1.2);
+  }
+
+  #tablaMeses2:hover {
+    transform: scale(1.2);
+  }
+
