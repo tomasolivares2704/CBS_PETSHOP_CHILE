@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+//----------------------------------------------------------------------FORMULARIO------------------------------------------------------------------
 	//VALIDACIÓN CON JQUERY
 	$('#Formulario').submit(function(event) {
 	  event.preventDefault(); // Evita que el formulario se envíe antes de validarlo correctamente
@@ -9,34 +9,6 @@ $(document).ready(function() {
 	  let nombre = $('#nombre').val();
 	  let email = $('#email').val();
 	  let numero = $('#numero').val();
-	  let asunto = $('#asunto').val();
-	  let mensaje = $('#mensaje').val();
-
-	  //VALIDACIONES CAMPOS OBLIGATORIOS
-
-	  if(nombre.length == 0){
-
-		alert("El campo nombre es requerido");
-		return false;
-	}
-
-	  if(email.length == 0){
-
-		alert("El campo correo es requerido");
-		return false;
-	}
-
-	  if(asunto.length == 0){
-
-		alert("El campo asunto es requerido");
-		return false;
-    }
-
-	  if(mensaje.length == 0){
-
-		alert("El campo mensaje es requerido");
-		return false;
-    }
 
 	//LLAMADO DE FUNCIONES DE VALIDACIÓN
 	if(!validarNombre(nombre)){
@@ -51,7 +23,7 @@ $(document).ready(function() {
 		return false;
 	}
 
-	if(!validarNumero(numero) || numero.length === 0){
+	if(!validarNumero(numero)){
 
 		$('#alertaErrNum').show().delay(2500).fadeOut("slow");
 		return false;
@@ -66,7 +38,6 @@ $(document).ready(function() {
 
 	//FUNCIONES DE VALIDACIÓN DE REQUISITOS PARA CADA CAMPO
 
-	//NOMBRE
 	function validarNombre(nombre){
 
 		let exprValidName = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
@@ -81,13 +52,52 @@ $(document).ready(function() {
 
 	function validarNumero(numero){
 
-		let exprValidNumber = /^(|\+56 )(\(?\d{2}\)?[- ]?)?\d{7}$/;
-		return exprValidNumber.test(numero)
+		if (numero.length === 0 ){
+			return true
+
+		} else{
+			let exprValidNumber = /^(|\+56 )(\(?\d{2}\)?[- ]?)?\d{7}$/;
+			return exprValidNumber.test(numero)
+		}
 	}
 
 	//FUNCIÓN QUE PERMITE CERRAR EL POP UP
 	$("#cerrar").on("click", function(){
-		$("#popup").fadeOut();("slow");
+		$("#popup").fadeOut("slow");
 	});
+
+	//FUNCIONES PARA CAMPOS OBLIGATORIOS
+	$("#nombre").blur(function(){
+		if ($(this).val() === '') {
+			$('#campReqNom').show().delay(2500).fadeOut("slow");
+		  return false;
+		}
+	  });
+
+	$("#email").blur(function(){
+		if ($(this).val() === '') {
+			$('#campReqMail').show().delay(2500).fadeOut("slow");
+			return false;
+		}
+	  });
+
+	$("#asunto").blur(function(){
+		if ($(this).val() === '') {
+			$('#campReqAsunto').show().delay(2500).fadeOut("slow");
+			return false;
+		}
+	  });
+
+	$("#mensaje").blur(function(){
+		if ($(this).val() === '') {
+			$('#campReqSMS').show().delay(2500).fadeOut("slow");
+			return false;
+		}
+	  });
+//-----------------------------------------------------------------------TIENDA---------------------------------------------------------------------
+	$(".divcard").on("click", function(){
+		$("#tabla-datos").fadeIn();
+	});
+
 
 });
