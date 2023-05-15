@@ -8,25 +8,6 @@
 </head>
 <body>
 
-  <p style="background-color: darkgrey; color: whitesmoke;">La hora local es: <span id="hora"></span></p>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $.ajax({
-        url: "http://worldtimeapi.org/api/ip",
-        dataType: "json",
-        success: function(data) {
-          var fechaHora = new Date(data.datetime);
-          var hora = fechaHora.getHours();
-          var minutos = fechaHora.getMinutes();
-          var segundos = fechaHora.getSeconds();
-          var horaSegundo = hora + ":" + minutos + ":" + segundos;
-          var horaMinuto = hora + ":" + minutos;
-          $("#hora").text(horaMinuto);
-        }
-      });
-    });
-  </script>
+  <h1> TEST -- TEST -- TEST</h1>
 </body>
 </html>

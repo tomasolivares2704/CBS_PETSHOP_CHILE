@@ -7,41 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles_cbs.css">
     <link rel="stylesheet" href="../css/mapatienda.css">
+    <link rel="stylesheet" href="../css/modal1.css">
     <title>Document</title>
 </head>
 <body>
 
-    <button id="btn1">Click</button>
-    <p style="color: aqua; background-color: red;">
-        La hora local es: <span id="hora"></span></p>
-
-   <script>
-  $(document).ready(function() {
-    // Define la URL de la API de WorldTimeAPI.org
-    var url = "http://worldtimeapi.org/api/ip";
-
-    // Hace una petición AJAX a la API
-    $.ajax({
-      url: url,
-      type: "GET",
-      dataType: "json",
-      success: function(data) {
-        // Si la petición es exitosa, muestra la hora local actual
-        $('#hora').text(data.datetime);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        // Si la petición falla, muestra un mensaje de error
-        $('#hora').text('No se pudo obtener la hora');
-      }
-    });
-  });
-</script>
-
-
+  <h1>TES -- TEST -- TEST</h1>
+  
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../js/perritodelmes.js"></script>
+    <script src="../js/modal1.js"></script>
 </body>
 </html>

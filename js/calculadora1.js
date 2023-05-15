@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
+    // CALCULADORA DE COMIDA//
 
     $('#calcularComida').click(function(){
+
+        // Se declarar las variables//
 
         var edadMascota = $('#edad').val();
         var pesoMascota = $('#peso').val();
@@ -9,6 +12,8 @@ $(document).ready(function(){
         if (edadMascota && pesoMascota) {
 
             var racionMascota = 0;
+
+            //Ingresa al sentencia IF en donde avanzara dependiendo que condicion cumpla//
 
             if (edadMascota >=0 && edadMascota <=3) {
                 var racionMascota = (pesoMascota * 0.2) * 1000;
@@ -28,7 +33,8 @@ $(document).ready(function(){
                 alert("Por favor, ingresa nuevamente los datos.");
                 return;
             }
-    
+            
+            //Retornara la valor obtenido concatenado a un texo a un determinado ID//
             $('#racionMascota').val(racionMascota.toFixed(2) + ' Gramos diarios.');
         } else {
             alert('Por favor, Reintente...');
