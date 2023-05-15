@@ -15,7 +15,7 @@ $(document).ready(function(){
 
             //Ingresa al sentencia IF en donde avanzara dependiendo que condicion cumpla//
 
-            if (edadMascota >=0 && edadMascota <=3) {
+            if (edadMascota >0 && edadMascota <=3) {
                 var racionMascota = (pesoMascota * 0.2) * 1000;
             } else if (edadMascota >=4 && edadMascota <=6) {
                 var racionMascota = (pesoMascota * 0.12) * 1000; 
