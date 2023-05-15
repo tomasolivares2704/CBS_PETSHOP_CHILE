@@ -11,37 +11,33 @@
 </head>
 <body>
 
-    <div class="container-fluid col-10" style="background-color:darkslategray; padding: 0.3cm; color: antiquewhite;" >
+    <button id="btn1">Click</button>
+    <p style="color: aqua; background-color: red;">
+        La hora local es: <span id="hora"></span></p>
 
-        <h3>¿Quieres aber quien es el "Canino" de la semana?</h3> <br>
+   <script>
+  $(document).ready(function() {
+    // Define la URL de la API de WorldTimeAPI.org
+    var url = "http://worldtimeapi.org/api/ip";
 
-        <div class="container-fluid row col-12">
-
-
-            <div class="container-fluid col-xs-8 col-sm-8 col-md-4 col-lg-4 col-xl-4">
-                <img id="dogImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7dEU7olYlld69YqWx8LE-vaxP1zd_54B-U3Hr3S67n-EJe5xIgYqqWE11QqZCMzTuJo&usqp=CAU" style="width: 300px; height: 250px;"><br><br>
-            </div>
-
-            <div class="container-fluid col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                <button type="button" class="btn btn-light" onClick="getRandomImage()">Click</button>         
-                <br><br>
-                <!-- --<button type="button" class="btn btn-light" id="btn-mostrar">Mostrar</button><br><br>
-                <button type="button" class="btn btn-light" id="btn-ocultar">Ocultar</button><br><br> -->
-            </div>
-            
-        </div>
-
-
-
-    </div>
-    
-
-    
-  
+    // Hace una petición AJAX a la API
+    $.ajax({
+      url: url,
+      type: "GET",
+      dataType: "json",
+      success: function(data) {
+        // Si la petición es exitosa, muestra la hora local actual
+        $('#hora').text(data.datetime);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        // Si la petición falla, muestra un mensaje de error
+        $('#hora').text('No se pudo obtener la hora');
+      }
+    });
+  });
+</script>
 
 
-
-    
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
