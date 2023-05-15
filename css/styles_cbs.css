@@ -845,3 +845,67 @@ body{
     border-radius: 10px;
     padding: 20px;
   }
+  /*----------------------------------------------------------------------UBICANOS-------------------------------------------------------------------------------*/
+
+  #visitanos{
+    background-color:red; 
+    height: 500px;
+    color: whitesmoke; 
+    text-align: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #visitanos h1{
+    color: aliceblue;
+    font-size: 70px;
+    font-family: fantasy;
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                 0px -2px 0px black;
+    }
+
+    #map{
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+  /*-----------------------------------------------------------------PERRO DE LA SEMANA--------------------------------------------------------------------------*/
+  #contPdelDia{
+    align-items: center;
+    background-color: #1b1b1b;
+    margin-top: 100px;
+  }
+  #contDogimg{
+    background-color:#1b1b1b; 
+    color: whitesmoke; 
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  #dogImage{
+    height: 400PX;
+    width: 400PX;
+    margin: 10%;
+  }
+
+  #perroDia{
+    background-color:#1b1b1b; 
+    color: whitesmoke; 
+    padding: 2cm;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #perroDia h1{
+    color: aliceblue;
+    text-justify: initial;
+    font-size: 60px;
+    font-family: fantasy;
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                 0px -2px 0px black;
+    }
